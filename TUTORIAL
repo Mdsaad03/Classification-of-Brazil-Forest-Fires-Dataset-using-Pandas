@@ -2,7 +2,6 @@ Imports:
 For this project, I set up a virtual environment using virtualenv. Check out this post for all the steps. We’re using three major libraries: pandas, matplotlib, googletrans.
 !pip3 install the these packages (if you haven’t already) before importing them.
 
-![image](https://github.com/user-attachments/assets/57097a74-fafc-4655-bd6f-bbc314d9f2eb)
 
 Read the data:
 Before reading date place your amazon.csv[provided] in your directory
