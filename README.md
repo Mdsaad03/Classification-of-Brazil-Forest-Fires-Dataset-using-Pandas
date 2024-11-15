@@ -1,32 +1,63 @@
 # Classification-of-Brazil-Forest-Fires-Dataset-using-Pandas
-This project classifies forest fire occurrences in Brazil using the Brazil Forest Fires Dataset. It applies Pandas for data preprocessing, performs exploratory analysis, and uses machine learning models to predict fire events. Models are evaluated using accuracy and other metrics.
-Objective
+This project classifies forest fire occurrences in Brazil using the Brazil Forest Fires Dataset. It applies Pandas for data preprocessing, performs exploratory data analysis (EDA), and uses machine learning models to predict fire events. Models are evaluated using accuracy and other metrics.
+
+#Objective
 The goal is to predict whether a forest fire is likely to occur based on environmental factors. The project involves:
 
-Data Cleaning: Preprocessing the dataset by handling missing values, encoding categorical variables, and scaling features.
-Exploratory Data Analysis (EDA): Using statistical and visualization techniques to understand feature relationships.
-Classification Models: Implementing machine learning models (e.g., Decision Trees, Random Forest, Logistic Regression) to classify fire occurrences.
-Model Evaluation: Assessing model performance using metrics such as accuracy, precision, recall, and F1-score.
-
-Technologies Used
+Data Cleaning: Handling missing values, encoding categorical variables, and scaling features.
+EDA: Statistical and visualization techniques to understand feature relationships.
+Classification Models: Machine learning models (e.g., Decision Trees, Random Forest, Logistic Regression).
+Model Evaluation: Metrics such as accuracy, precision, recall, and F1-score.
+#Technologies Used
 Python: Core programming language.
 Pandas: Data manipulation and preprocessing.
-Scikit-learn: Machine learning model implementation and evaluation.
+Scikit-learn: Machine learning model implementation.
 Matplotlib & Seaborn: Data visualization.
+Googletrans: For translating text (e.g., month names).
+#Dataset Details
+The dataset, obtained from Kaggle, includes:
+
+year: Year of forest fire occurrence.
+state: Brazilian state where the fire occurred.
+month: Month of occurrence (in Portuguese).
+number: Number of forest fires reported.
+date: Specific date of the report.
+
+#Preprocessing Steps
+Handling Thousand Separators: Convert numbers like 2.588 to 2588.
+Encoding and Translation: Translate Portuguese month names to English using googletrans.
+Fixing CSV Encoding Issues: Addressed UnicodeDecodeError by saving the file with UTF-8 encoding.
+
+#Visualizations
+Bar Graph: Forest Fires Over the Months
+This graph visualizes the total number of forest fires across months from 1998–2017.
 
 
 
-I got a hold of a dataset (from Kaggle) of forest fires in Brazil, which houses the largest rainforest on Earth — Amazon. I didn’t want to be picky and so this dataset was a complete random choice.
-About the data:
-year is the year when the forest fire happened;
-state is the Brazilian state;
-month is the month when the forest fire happened;
-number is the number of forest fires reported;
-date is the date when the forest fire was reported
+#Installation and Setup
+Clone the repository:
+https://github.com/Mdsaad03/Classification-of-Brazil-Forest-Fires-Dataset-using-Pandas/edit/main/README.md
+Install the required libraries:
+pip install pandas matplotlib scikit-learn googletrans
 
-Going through the csv file (amazon.csv), you notice that some numbers are in decimal. 2.588 numbers of forest fires doesn't make sense. That's because the decimal is how thousands are formatted. So, 2.588 means 2588 forest fires. This can easily be accounted for when reading the csv file.
-You’ll also notice that the month column is in Portuguese. There's an upcoming fix for that too.
-When I imported the file for the first time after downloading it, I got an error: UnicodeDecodeError: 'utf-8' codec can't decode byte in position : invalid continuation byte. To fix it, I opened the csv in Sublime Text and: Save with Encoding -> UTF-8. However, this caused errors in the date column. So, I simply opened up the original csv and exported it as csv. Weird but it worked.
+Place the amazon.csv file in the working directory.
+
+#Key Scripts
+Data Preprocessing:
+Group data by month and sum the number of fires.
+Translate Portuguese month names to English.
+Plotting:
+Use matplotlib for bar chart visualization.
+
+#Learnings
+Dealing with inconsistent datasets (e.g., formatting issues).
+Applying Python libraries for preprocessing, EDA, and visualization.
+Translating text programmatically using googletrans.
+
+#Conclusion
+This project demonstrates the end-to-end process of analyzing a dataset. It encourages experimentation and exploration, offering numerous learning opportunities.
+
+Download a dataset and start exploring!
 
 
 
