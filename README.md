@@ -36,6 +36,10 @@ This graph visualizes the total number of forest fires across months from 1998â€
 Install the required libraries:
 pip install pandas matplotlib scikit-learn googletrans
 
+# Downlaod Dataset
+
+link>>https://github.com/Mdsaad03/Classification-of-Brazil-Forest-Fires-Dataset-using-Pandas/blob/main/amazon.csv
+
 Place the amazon.csv file in the working directory.
 
 # Key Scripts
