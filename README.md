@@ -38,6 +38,7 @@ pip install pandas matplotlib scikit-learn googletrans
 
 # Important Links
 For googletrans>>https://www.codeproject.com/Tips/1236705/How-to-Use-Google-Translator-in-Python
+
 For looping with enumerate()>>https://www.bitdegree.org/learn/python-enumerate
 
 
